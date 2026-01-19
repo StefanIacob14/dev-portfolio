@@ -13,35 +13,62 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <title>S.I. Dev Portfolio</title>
+    <title>S.I. Dev. Portfolio</title>
   </head>
 
-  <body class="bg-[#1e1e1e] text-amber-50">
+  <body class="bg-[#1e1e1e] text-amber-50 relative">
     <!--HERO SECTION-->
-    <section>
-      <nav>
-        <img src="images/menu-line.svg" />
+    <section class="h-screen px-[2.19rem]">
+      <nav class="h-10">
+        <button class="absolute z-50 top-3.5 right-3.5">
+          <img src="images/menu-line.svg" class="size-4.5" />
+        </button>
       </nav>
 
-      <header>
-        <p>Hello! I'm</p>
+      <header class="mb-22 mt-10">
+        <p class="font-content font-light mb-5 text-[0.9rem]">Hello! I'm</p>
 
-        <p>STEFAN IACOB</p>
+        <p
+          class="font-title font-black text-[1.8rem] text-[#4a90e2] tracking-widest mb-1.5 text-shadow-md/30 text-shadow-[#4a90e2]"
+        >
+          STEFAN IACOB
+        </p>
 
-        <p>Front-End Developer</p>
+        <p
+          class="font-content font-medium text-[#4a90e2] text-shadow-md/30 text-shadow-[#4a90e2]"
+        >
+          Front-End Developer
+        </p>
       </header>
 
       <main>
-        <p>I build modern, responsive and clean web interfaces.</p>
+        <p
+          class="font-content font-medium text-[0.8rem] mb-12 tracking-wide leading-[1.7rem]"
+        >
+          I build modern, responsive and clean web interfaces.
+        </p>
 
-        <button>View My Work</button>
+        <button
+          class="font-title font-light text-[0.75rem] text-[#6da1de] border-solid border-[0.1rem] border-[#4a90e2] p-2.5 rounded-3xl"
+        >
+          View My Work
+        </button>
       </main>
 
       <footer>
-        <p>Scroll</p>
-
-        <img src="images/arrow-down-circle-line.svg" />
+        <div
+          class="absolute flex flex-col items-center gap-0.5 bottom-3.5 left-[50%] -translate-x-1/2 opacity-20 animate-my-pulse"
+        >
+          <p class="text-[0.95rem] italic">Scroll</p>
+          <img src="images/arrow-down-circle-line.svg" class="size-4" />
+        </div>
       </footer>
+      <div
+        class="size-30 bg-[#4a90e2] rounded-full absolute -top-10 -left-10 blur-3xl opacity-40"
+      ></div>
+      <div
+        class="size-50 bg-[#4a90e2] rounded-full absolute -bottom-20 -right-20 blur-3xl opacity-25"
+      ></div>
     </section>
   </body>
 </html>
