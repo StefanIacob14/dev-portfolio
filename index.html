@@ -11,63 +11,60 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/style.css" />
 
     <title>S.I. Dev. Portfolio</title>
   </head>
 
-  <body class="bg-[#1e1e1e] text-amber-50">
+  <body
+    class="bg-[#1e1e1e] text-amber-50 bg-linear-to-br from-[#4a90e2]/15 to-[#1e1e1e]"
+  >
     <!--HERO SECTION-->
-    <section class="relative h-screen w-full px-[2.19rem] overflow-hidden">
-      <nav class="h-10 w-full">
-        <button class="absolute z-50 top-4 right-4">
-          <img src="images/menu-line.svg" class="size-5.5" />
-        </button>
-      </nav>
-
-      <header class="mb-22 mt-10 relative w-full overflow-hidden">
-        <p class="font-content font-light mb-5 text-[0.9rem]">Hello! I'm</p>
-
-        <p
-          class="font-title font-black text-[2.5rem] text-[#4a90e2] tracking-wider mb-1.5 text-shadow-md/30 text-shadow-[#4a90e2]"
-        >
-          STEFAN IACOB
-        </p>
-
-        <p
-          class="font-content font-medium text-[1.1rem] text-[#4a90e2] text-shadow-md/30 text-shadow-[#4a90e2]"
-        >
-          Front-End Developer
-        </p>
+    <section class="h-screen w-screen">
+      <header class="h-15 w-screen">
+        <nav class="">
+          <button id="menu--button" class="absolute z-50 top-5 right-5">
+            <img id="menu--icon" alt="Menu Icon" class="size-5.5" />
+          </button>
+        </nav>
       </header>
 
-      <main>
-        <p
-          class="font-content font-medium w-70 text-[0.9rem] mb-12 tracking-wide leading-[1.7rem]"
-        >
-          I build modern, responsive and clean web interfaces.
-        </p>
+      <main class="px-5">
+        <article>
+          <header class="mb-22 mt-10">
+            <p class="font-content font-light mb-5 text-[0.9rem]">Hello! I'm</p>
 
-        <button
-          class="font-title font-light text-[0.75rem] text-[#6da1de] border-solid border-[0.1rem] border-[#4a90e2] p-2.5 rounded-3xl"
-        >
-          View My Work
-        </button>
+            <p
+              class="font-title font-black text-[2.5rem] text-[#4a90e2] tracking-wider mb-1.5 text-shadow-md/30 text-shadow-[#4a90e2]"
+            >
+              STEFAN IACOB
+            </p>
+
+            <p
+              class="font-content font-medium text-[1.1rem] text-[#4a90e2] text-shadow-md/30 text-shadow-[#4a90e2]"
+            >
+              Front-End Developer
+            </p>
+          </header>
+
+          <section>
+            <p
+              class="font-content font-medium w-70 text-[0.9rem] mb-20 tracking-wide leading-[1.7rem]"
+            >
+              I build modern, responsive and clean web interfaces.
+            </p>
+
+            <button
+              id="projects--button"
+              class="font-title font-light text-[0.75rem] text-[#6da1de] border-solid border-[0.1rem] border-[#4a90e2] p-2.5 rounded-3xl cursor-pointer"
+            >
+              View My Work
+            </button>
+          </section>
+        </article>
       </main>
-
-      <footer>
-        <img
-          src="images/arrow-down-line.svg"
-          class="absolute size-5 bottom-30 left-[50%] -translate-x-1/2 opacity-10 animate-my-bounce"
-        />
-      </footer>
-
-      <div
-        class="size-30 bg-[#4a90e2] rounded-full absolute -top-10 -left-10 blur-3xl opacity-40"
-      ></div>
-      <div
-        class="size-50 bg-[#4a90e2] rounded-full absolute bottom-3 -right-20 blur-3xl opacity-25 overflow-hidden"
-      ></div>
     </section>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
